@@ -10,5 +10,6 @@
             "name": "VBoss",
             "email": "vcevela@gmail.com"
         }
-    ]
+    ],
+    "minimum-stability": "stable"
 }
