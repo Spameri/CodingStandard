@@ -1,0 +1,14 @@
+{
+    "name": "spameri/coding-standard",
+    "require": {
+        "squizlabs/php_codesniffer": "^3.4",
+        "slevomat/coding-standard": "^5.0",
+        "escapestudios/symfony2-coding-standard": "^3.5"
+    },
+    "authors": [
+        {
+            "name": "VBoss",
+            "email": "vcevela@gmail.com"
+        }
+    ]
+}
