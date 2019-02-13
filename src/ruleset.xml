@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <ruleset name="Spameri">
 
-	<config name="installed_paths" value="../slevomat/coding-standard,../escapestudios/symfony2-coding-standard"/>
+	<config name="installed_paths" value="../../slevomat/coding-standard,../../escapestudios/symfony2-coding-standard"/>
 
 	<!-- Arrays -->
 	<rule ref="SlevomatCodingStandard.Arrays.TrailingArrayComma"/>
@@ -12,7 +12,6 @@
 	<rule ref="SlevomatCodingStandard.Classes.ClassConstantVisibility"/>
 	<rule ref="SlevomatCodingStandard.Classes.UnusedPrivateElements"/>
 	<rule ref="SlevomatCodingStandard.Classes.ModernClassNameReference"/>
-	<rule ref="SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces"/>
 
 	<!-- Exceptions -->
 	<rule ref="SlevomatCodingStandard.Exceptions.DeadCatch"/>
@@ -23,15 +22,19 @@
 	<rule ref="Generic.Files.LineEndings"/>
 	<rule ref="PSR2.Files.EndFileNewline"/>
 	<rule ref="Zend.Files.ClosingTag"/>
-	<rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName"/>
+	<rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName">
+		<properties>
+			<property name="rootNamespaces" type="array">
+				<element key="src" value="Spameri\Elastic"/>
+			</property>
+		</properties>
+	</rule>
 
 	<!-- Functions -->
 	<rule ref="Squiz.Functions.LowercaseFunctionKeywords"/>
 	<rule ref="SlevomatCodingStandard.Functions.StaticClosure"/>
 	<rule ref="SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure"/>
 	<rule ref="SlevomatCodingStandard.Functions.UnusedParameter"/>
-	<rule ref="SlevomatCodingStandard.Functions.UselessParameterDefaultValue"/>
-	<rule ref="SlevomatCodingStandard.Functions.TrailingCommaInCall"/>
 
 	<!-- Namespaces -->
 	<rule ref="SlevomatCodingStandard.Namespaces.UnusedUses">
@@ -74,11 +77,10 @@
 	<rule ref="SlevomatCodingStandard.ControlStructures.DisallowYodaComparison"/>
 	<rule ref="SlevomatCodingStandard.ControlStructures.DisallowEmpty"/>
 	<rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator"/>
-	<rule ref="SlevomatCodingStandard.ControlStructures.ControlStructureSpacing"/>
+
 
 	<!-- TypeHints -->
 	<rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes"/>
-	<rule ref="SlevomatCodingStandard.TypeHints.TypeHintDeclaration"/>
 	<rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes"/>
 	<rule ref="SlevomatCodingStandard.TypeHints.DisallowArrayTypeHintSyntax"/>
 	<rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing">
