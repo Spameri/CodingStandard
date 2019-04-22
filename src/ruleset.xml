@@ -80,8 +80,9 @@
 
 
 	<!-- TypeHints -->
-	<rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes"/>
-	<rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes"/>
+	<rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
+		<exclude name="SlevomatCodingStandard.TypeHints.DeclareStrictTypes.IncorrectWhitespaceBetweenOpenTagAndDeclare"/>
+	</rule>
 	<rule ref="SlevomatCodingStandard.TypeHints.DisallowArrayTypeHintSyntax"/>
 	<rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing">
 		<properties>
