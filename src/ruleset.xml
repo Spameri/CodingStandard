@@ -26,6 +26,7 @@
 		<properties>
 			<property name="rootNamespaces" type="array">
 				<element key="src" value="Spameri\Elastic"/>
+				<element key="tests/SpameriTests" value="SpameriTests"/>
 			</property>
 		</properties>
 	</rule>
@@ -84,11 +85,7 @@
 		<exclude name="SlevomatCodingStandard.TypeHints.DeclareStrictTypes.IncorrectWhitespaceBetweenOpenTagAndDeclare"/>
 	</rule>
 	<rule ref="SlevomatCodingStandard.TypeHints.DisallowArrayTypeHintSyntax"/>
-	<rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing">
-		<properties>
-			<property name="spacesCountBeforeColon" value="1"/>
-		</properties>
-	</rule>
+	<rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing" />
 	<rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing"/>
 
 	<!-- Operators -->
